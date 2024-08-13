@@ -25,9 +25,7 @@ if uploaded_file:
 
     df['Elementtityyppi'] = df["Elementtitunnus"].apply(get_elementtityyppi)
     
-    
-    df = df[df['Elementtityyppi'].str.len() == 2]
-    
+
     # Insert the 'Elementtityyppi' column into the DataFrame
     df.insert(0, 'Elementtityyppi', df.pop('Elementtityyppi'))
 
