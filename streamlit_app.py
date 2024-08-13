@@ -3,6 +3,10 @@ import streamlit as st
 import pandas as pd
 import io
 
+st.set_page_config(page_title = "Tenelin materiaalikohtainen raportin makro",
+                       page_icon = "https://media.licdn.com/dms/image/C4D0BAQFI0MIzw6FrnQ/company-logo_200_200/0/1630485166627/tencon_oy_logo?e=2147483647&v=beta&t=vyb89d4bGkfCfp0yVFGAWTWuS2h0yvAnUsBN1ccM0ew",
+                       layout = "wide",
+                       menu_items= {"Report a bug" : "mailto:nuthanon.kittiwatanachod@tencon.fi", })
 uploaded_file = st.file_uploader("Materiaalikohtainen raportti.xlsx", type="xlsx")
 
 def get_elementtityyppi(value):
